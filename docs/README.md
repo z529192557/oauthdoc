@@ -1,4 +1,4 @@
-# Oauth登录授权功能文档
+# Oauth登录授权功能
 
 * [开发指南](/guide/guide)
 
