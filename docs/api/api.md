@@ -84,6 +84,7 @@ signature |是|	签名,md5(appid+orderid+vipType+timestamp+secret),appid和secre
 }
 ```
 ##### 返回说明
+
 正确的返回
 ```
 {
