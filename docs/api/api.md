@@ -9,6 +9,7 @@
 ##### 请求说明：
 
 http请求方式：**GET**
+
 <https://m-home.kaola.com/outLogin/api/getUserInfo.html?access_token=${token}&openid=${openid}>
 
 ##### 参数说明
