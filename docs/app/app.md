@@ -57,7 +57,7 @@ secret 需要通过后台云服务器传递，**不要在客户端，前台应�
 - | :-
 code | 返回码
 msg | 附加信息
-expires_in | accessToke凭证超时时间，单位(秒)
+expires_in | accessToke凭证超时时间，单位(秒)，默认2小时
 scope | 用户授权的作用域
 accessToken | accessToke文本值
 openId | 授权用户唯一标识
