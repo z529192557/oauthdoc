@@ -1,7 +1,10 @@
 ## 第一步 : 唤起App请求临时授权码
 
 通过私有scheme跳转考拉授权App
-<kaolaauth://?action=1&openurl=${openurl}&appid=${appid}&scope={scope}>
+
+* 注意：openurl参数要encode
+
+<kaolaauth://?action=1&openurl=encodeURI('${openurl}')&appid=${appid}&scope={scope}>
 ##### 参数说明
 
 参数 | 是否必须 | 说明

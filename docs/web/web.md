@@ -2,7 +2,9 @@
 
 第三方使用网站应用授权登录前请注意已获取相应授权作用域（scope=kaola-vip），则可以通过在浏览器打开以下链接:
 
-<https://m.kaola.com/outLogin/oauth.html?appid=${appid}&scope=${scope}&redirect_uri=${redirect_uri}>
+* 注意：redirect_uri参数要encode
+
+<https://m.kaola.com/outLogin/oauth.html?appid=${appid}&scope=${scope}&redirect_uri=encodeURI('${redirect_uri}')>
 
 ##### 参数说明
 
@@ -10,7 +12,7 @@
 - | :-: | :-
 appid | 是 | 应用唯一标识，向考拉申请
 scope | 是 | 应用授权作用域，目前仅支持**kaola-vip**
-redirect_uri | 否 | 授权后重定向地址
+redirect_uri | 否 | 授权后重定向地址，若回跳App，则不需要传该参数
 
 ##### 调用频率限制
 100tps
