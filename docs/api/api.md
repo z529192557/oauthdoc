@@ -71,7 +71,7 @@ orderid |是| 腾讯视频订单id，幂等控制
 vipType |是| 1:红卡月卡，2:红卡年卡
 access_token |是| access_token
 timestamp |是| 超过15分钟后该链接无效，以服务器时间为准 时间戳是秒，而非毫秒。
-signature |是|	签名md5(appid+orderid+vipType+timestamp+secret)，参数检验。appid和secret考拉分配
+signature |是|	签名,md5(appid+orderid+vipType+timestamp+secret),appid和secret考拉分配
 
 ##### POST Body请求体例子
 ```
