@@ -1,13 +1,15 @@
 ## 获取用户信息
 
+第三方应用经过用户授权，拿到access_token后方可调用。
+
 ##### 接口说明：
 
 此接口用于获取用户个人信息。开发者可通过OpenID来获取用户基本信息。OpenId每一个用户唯一。
 
 ##### 请求说明：
 
-http请求方式：GET
-<http://m-home.kaola.com/outLogin/api/getUserInfo.html?access_token=${token}&openid=${openid}>
+http请求方式：**GET**
+<https://m-home.kaola.com/outLogin/api/getUserInfo.html?access_token=${token}&openid=${openid}>
 
 ##### 参数说明
 
@@ -17,7 +19,7 @@ access_token | 是 | access_token
 openid | 是 | 用户openId
 
 ##### 返回说明
-正确的返回
+正确的返回s
 ```
 {
   "code":200,
