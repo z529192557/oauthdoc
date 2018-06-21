@@ -80,7 +80,7 @@ signature |是|	签名md5(appid+orderid+vipType+timestamp+secret)，参数检验
     "vipType" : 1
     "access_token" : "token69ee5d1bd23d2e2110ae60b296b2345a"
     "timestamp" : 15000000
-    "signature" "codeb1310ff1fc1289714485ba699227eb64"
+    "signature" "b1310ff1fc1289714485ba699227eb64"
 }
 ```
 ##### 返回说明
