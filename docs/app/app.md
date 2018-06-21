@@ -1,6 +1,26 @@
 ## 第一步 : 唤起App请求临时授权码
 
- 文档待定
+通过私有scheme跳转考拉授权App
+<kaolaauth://?action=1&openurl=${openurl}&appid=${appid}&scope={scope}>
+##### 参数说明
+
+参数 | 是否必须 | 说明
+- | :-: | :-
+action | 是 | 1
+openurl | 是 | webview打开url
+appid | 是 | 应用id
+scope | 是 | 应用授权范围
+
+##### 返回说明
+
+用户允许授权后，将会重定向到appid在考拉配置的scheme的地址上，并且带上code参数
+```
+<thirdparty://?code={code}>
+```
+用户拒绝允许授权后，将会重定向到appid在考拉配置的scheme的地址上,不带任何参数
+```
+<thirdparty://?>
+```
 
 ## 第二步 : 通过code获取access_token
 通过code获取access_token

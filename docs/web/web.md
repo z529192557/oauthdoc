@@ -10,7 +10,7 @@
 - | :-: | :-
 appid | 是 | 应用唯一标识，向考拉申请
 scope | 是 | 应用授权作用域，目前仅支持**kaola-vip**
-redirect_uri | 是 | 授权后重定向地址
+redirect_uri | 否 | 授权后重定向地址
 
 ##### 调用频率限制
 100tps
@@ -24,6 +24,14 @@ redirect_uri?code=CODE
 用户允许授权后，将会重定向到redirect_uri的网址上,不带任何参数
 ```
 redirect_uri?code=CODE
+```
+若需要回跳App，redirect_uri 参数可以不传，则用户允许授权后，将会重定向到appid在考拉配置的scheme的地址上，并且带上code参数
+```
+<thirdparty://?code={code}>
+```
+若需要回跳App，redirect_uri 参数可以不传，用户拒绝允许授权后，将会重定向到appid在考拉配置的scheme的地址上,不带任何参数
+```
+<thirdparty://?>
 ```
 
 ## 第二步 : 通过code获取access_token
