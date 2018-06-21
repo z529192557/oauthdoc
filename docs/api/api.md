@@ -66,20 +66,18 @@ http请求方式：**POST**
 
 参数 | 是否必须 | 说明
 - | :-: | :-
-orderId | 腾讯视频订单id，幂等控制
+orderid | 腾讯视频订单id，幂等控制
 vipType | 1:红卡月卡，2:红卡年卡
 access_token | access_token
-appid | 应用Appid
 timestamp | 超过15分钟后该链接无效，以服务器时间为准 时间戳是秒，而非毫秒。
-signature |	签名md5(Appid+orderId+vipType+timestamp+AppSecret )，参数检验。AppSecret 应用密钥
+signature |	签名md5(appid+orderid+vipType+timestamp+secret)，参数检验。appid和secret考拉分配
 
 ##### POST Body请求体例子
 ```
 {
-    "orderId" : "videoViporderXXXXXX",
+    "orderid" : "videoViporderXXXXXX",
     "vipType" : 1
     "access_token" : "token69ee5d1bd23d2e2110ae60b296b2345a"
-    "appid" : "kaola2342353451"
     "timestamp" : 150000000
     "signature" "codeb1310ff1fc1289714485ba699227eb64"
 }
