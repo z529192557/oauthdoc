@@ -27,7 +27,7 @@ scope | 是 | 应用授权范围，写死 **kaola-tenvideo-vip**
 
 * 注意：redirect_uri参数要encode
 
-<https://m.kaola.com/member/activity/oauth.html?appid=${appid}&scope=${scope}&redirect_uri=encodeURI('${redirect_uri}')>
+<https://m.kaola.com/member/activity/oauth.html?appid=${appid}&scope=${scope}>
 
 ##### 参数说明
 
@@ -35,7 +35,7 @@ scope | 是 | 应用授权范围，写死 **kaola-tenvideo-vip**
 - | :-: | :-
 appid | 是 | 应用唯一标识，向考拉申请
 scope | 是 | 应用授权范围，写死 **kaola-tenvideo-vip**
-redirect_uri | 否 | 授权后重定向地址，若回跳App，则不需要传该参数
+
 
 ##### 调用频率限制
 100tps
