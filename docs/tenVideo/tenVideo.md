@@ -17,10 +17,15 @@ scope | 是 | 应用授权范围，写死 **kaola-tenvideo-vip**
 
 ##### 返回说明
 
-用户允许授权后，将会重定向到腾讯在考拉配置的scheme的地址上，并且带上相关用户参数
+用户允许授权后，将会重定向到腾讯在考拉配置的scheme的地址上，并且带上相关用户参数,例：
 ```
-<tenvideo2://action =10&openurl= + encodeURIComponent('https://film.qq.com/h5/vplus/pay/?channelid=kaola&account=%E4%BB%A5%E7%88%B6%E4%B9%8B%E5%90%8D&openid=5b1f8ab344363b2f94e7fdd8&access_token=6655c2816fe6af5bf31ddd70a3c5953a94af9e32501c933ced960a1254fd3cd66b10bbef3df754fb8b4fab32ab38ce848860')>
+<tenvideo2://action =10&openurl= + encodeURIComponent('https://film.qq.com/h5/vplus/pay/?channelid=kaola&account=以父之名&openid=92266349cd94352d026ad2cf8dae5577&access_token=token5935272a496b1f348ca689306f8a1493')>
 ```
+返回参数| 说明
+- | :-: | :-
+account | 昵称
+access_token | accessToken值
+openid | 用户openId
 
 ## 腾讯视频App内唤起考拉H5请求accessToken与用户信息
 
@@ -43,7 +48,12 @@ scope | 是 | 应用授权范围，写死 **kaola-tenvideo-vip**
 
 ##### 返回说明
 
-用户允许授权后，将会重定向到腾讯H5的网址上，并且带上code参数
+用户允许授权后，将会重定向到腾讯H5的网址上，并且带上相关用户参数，例：
 ```
-https://film.qq.com/h5/vplus/pay/?channelid=kaola&account=%E4%BB%A5%E7%88%B6%E4%B9%8B%E5%90%8D&openid=5b1f8ab344363b2f94e7fdd8&access_token=6655c2816fe6af5bf31ddd70a3c5953a94af9e32501c933ced960a1254fd3cd66b10bbef3df754fb8b4fab32ab38ce848860
+https://film.qq.com/h5/vplus/pay/?channelid=kaola&account=酒剑小仙&openid=92266349cd94352d026ad2cf8dae5577&access_token=token5935272a496b1f348ca689306f8a1493
 ```
+返回参数 | 说明
+- | :-: | :-
+account | 昵称
+access_token | accessToken值
+openid | 用户openId
