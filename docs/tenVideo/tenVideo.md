@@ -33,7 +33,7 @@ openid | 用户openId
 
 * 注意：redirect_uri参数要encode
 
-<https://m.kaola.com/member/activity/oauth.html?appid=${appid}&scope=${scope}>
+<https://m.kaola.com/member/activity/oauth.html?appid=${appid}&scope=kaola-tenvideo-vip>
 
 ##### 参数说明
 
