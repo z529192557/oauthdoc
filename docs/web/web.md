@@ -4,7 +4,7 @@
 
 * 注意：redirect_uri参数要encode
 
-<https://m.kaola.com/outLogin/oauth.html?appid=${appid}&scope=${scope}&redirect_uri=encodeURI('${redirect_uri}')>
+<https://m.kaola.com/member/activity/oauth.html?appid=${appid}&scope=${scope}&redirect_uri=encodeURI('${redirect_uri}')>
 
 ##### 参数说明
 

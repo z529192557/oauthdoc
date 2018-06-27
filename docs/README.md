@@ -8,4 +8,6 @@
 
 * [接口调用说明](/api/api)
 
+* [腾讯视频指南](/tenVideo/tenVideo)
+
 * [返回码说明](/code/code)
