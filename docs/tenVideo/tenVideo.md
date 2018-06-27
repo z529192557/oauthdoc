@@ -4,14 +4,15 @@
 
 * 注意：openurl参数要encode
 
-<kaolaauth://?action=1&openurl=encodeURI('${openurl}')&appid=${appid}&scope={scope}>
+<kaolaauth://?action=1&openurl=encodeURI(https://m.kaola.com/member/activity/oauth.html&appid=${appid}&scope=kaola-tenvideo-vip)>
+
 ##### 参数说明
 
 参数 | 是否必须 | 说明
 - | :-: | :-
 action | 是 | 1
 openurl | 是 | webview打开url
-appid | 是 | 应用Appid
+appid | 是 | 应用Appid,考拉分配
 scope | 是 | 应用授权范围，写死 **kaola-tenvideo-vip**
 
 ##### 返回说明
@@ -21,7 +22,7 @@ scope | 是 | 应用授权范围，写死 **kaola-tenvideo-vip**
 <tenvideo2://action =10&openurl= + encodeURIComponent('https://film.qq.com/h5/vplus/pay/?channelid=kaola&account=%E4%BB%A5%E7%88%B6%E4%B9%8B%E5%90%8D&openid=5b1f8ab344363b2f94e7fdd8&access_token=6655c2816fe6af5bf31ddd70a3c5953a94af9e32501c933ced960a1254fd3cd66b10bbef3df754fb8b4fab32ab38ce848860')>
 ```
 
-## ## 腾讯视频App内唤起考拉H5请求accessToken与用户信息
+## 腾讯视频App内唤起考拉H5请求accessToken与用户信息
 
 第三方使用网站应用授权登录前请注意已获取相应授权作用域（scope=kaola-vip），则可以通过在浏览器打开以下链接:
 
