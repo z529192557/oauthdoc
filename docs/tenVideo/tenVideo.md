@@ -4,7 +4,7 @@
 
 * 注意：openurl参数要encode
 
-<kaolaauth://?action=1&openurl=encodeURI(https://m.kaola.com/member/activity/oauth.html&appid=${appid}&scope=kaola-tenvideo-vip)>
+<kaolaauth://?action=1&openurl=encodeURIComponent(https://m.kaola.com/member/activity/oauth.html&appid=${appid}&scope=kaola-tenvideo-vip)>
 
 ##### 参数说明
 
@@ -19,7 +19,7 @@ scope | 是 | 应用授权范围，写死 **kaola-tenvideo-vip**
 
 用户允许授权后，将会重定向到腾讯在考拉配置的scheme的地址上，并且带上相关用户参数,例：
 ```
-<tenvideo2://action=10&openurl=encodeURIComponent('https://film.qq.com/h5/vplus/pay/?channelid=kaola&account=以父之名&openid=92266349cd94352d026ad2cf8dae5577&access_token=token5935272a496b1f348ca689306f8a1493')>
+<tenvideo2://action=10&openurl= + encodeURIComponent('https://film.qq.com/h5/vplus/pay/?channelid=kaola&account=以父之名&openid=92266349cd94352d026ad2cf8dae5577&access_token=token5935272a496b1f348ca689306f8a1493')>
 ```
 返回参数| 说明
 - | :-: | :-
@@ -33,7 +33,7 @@ openid | 用户openId
 
 * 注意：redirect_uri参数要encode
 
-<https://m.kaola.com/member/activity/oauth.html?appid=${appid}&scope=kaola-tenvideo-vip>
+<https://m.kaola.com/member/activity/oauth.html?appid=${appid}&scope=>
 
 ##### 参数说明
 
@@ -57,3 +57,22 @@ https://film.qq.com/h5/vplus/pay/?channelid=kaola&account=酒剑小仙&openid=92
 account | 昵称
 access_token | accessToken值
 openid | 用户openId
+
+
+
+
+## 考拉App唤起腾讯App授权后，回调URL
+
+<kaolaauth://?action=1&openurl=encodeURIComponent(https://m.kaola.com/member/activity/txRecord.html?parma1=${parma1}&parma2=${parma2})>
+
+
+##### 参数说明
+param中带中文的，先urlencode 该参数
+
+
+## 考拉H5唤起腾讯H5授权后，回调URL
+
+https://m.kaola.com/member/activity/txRecord.html?parma1=${parma1}&parma2=${parma2}
+
+##### 参数说明
+param中带中文的，先urlencode 该参数
