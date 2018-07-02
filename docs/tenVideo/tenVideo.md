@@ -69,6 +69,10 @@ openid | 用户openId
 ##### 参数说明
 param中带中文的，先urlencode 该参数
 
+##### 例子
+
+<kaolaauth://?action=1&openurl=https%3A%2F%2Fm.kaola.com%2Fmember%2Factivity%2FtxRecord.html%3Ftype%3D0%26accessToken%3Dee26b0dd4af7e749aa1a%26appid%3D101483052%26openid%3DE3EB42D261FD7F031816BA2728A73F5C%26nick%3D%25E9%2585%2592%25E5%2589%2591%25E5%25B0%258F%25E4%25BB%2599%26pic%3Dhttps%253A%252F%252Fthirdqq.qlogo.cn%252Fg%253Fb%253Dsdk%2526k%253Du1mbZcoBjax8DUyeic3RW0g%2526s%253D140%2526t%253D1483327077%26dataSign%3Df323808efe0b6567978312e57f0bc5574ad16b774c59fc1f7aa6068937bee532cd415760f3aac0e0ebd6af070fa0688ee23414cdef810a9650d8d1d099a6069d>
+
 
 ## 考拉H5唤起腾讯H5授权后，回调URL
 
@@ -76,3 +80,8 @@ https://m.kaola.com/member/activity/txRecord.html?parma1=${parma1}&parma2=${parm
 
 ##### 参数说明
 param中带中文的，先urlencode 该参数
+
+##### 例子
+<https://m.kaola.com/member/activity/txRecord.html?type=0&accessToken=ee26b0dd4af7e749aa1a&appid=101483052&openid=E3EB42D261FD7F031816BA2728A73F5C&nick=%E9%85%92%E5%89%91%E5%B0%8F%E4%BB%99&pic=https%3A%2F%2Fthirdqq.qlogo.cn%2Fg%3Fb%3Dsdk%26k%3Du1mbZcoBjax8DUyeic3RW0g%26s%3D140%26t%3D1483327077&dataSign=f323808efe0b6567978312e57f0bc5574ad16b774c59fc1f7aa6068937bee532cd415760f3aac0e0ebd6af070fa0688ee23414cdef810a9650d8d1d099a6069d>
+
+
