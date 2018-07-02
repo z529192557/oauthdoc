@@ -71,7 +71,7 @@ openid | 用户openId
 ##### 提供给腾讯的授权回调协议，用于授权成功重新拉起 app
 
 ```
-<kaolaauth://?action=1&openurl=encodeURIComponent(https://m.kaola.com/member/activity/txRecord.html?parma1=${parma1}&parma2=${parma2})>
+<kaolaauth://?action=1&openurl=encodeURIComponent(https://m.kaola.com/member/activity/txRecord.html?recorId=XXXXX&parma1=${parma1}&parma2=${parma2})>
 ```
 
 ##### 参数说明
@@ -92,13 +92,13 @@ param中带中文的，先urlencode 该参数
 
 ## 考拉H5唤起腾讯H5授权后，回调URL
 ```
-<https://m.kaola.com/member/activity/txRecord.html?parma1=${parma1}&parma2=${parma2}>
+<https://m.kaola.com/member/activity/txRecord.html?recorId=XXXXX&parma1=${parma1}&parma2=${parma2}>
 ```
 ##### 参数说明
 param中带中文的，先urlencode 该参数
 
 ##### 回调例子
 ```
-<https://m.kaola.com/member/activity/txRecord.html?type=0&accessToken=ee26b0dd4af7e749aa1a&appid=101483052&openid=E3EB42D261FD7F031816BA2728A73F5C&nick=%E9%85%92%E5%89%91%E5%B0%8F%E4%BB%99&pic=https%3A%2F%2Fthirdqq.qlogo.cn%2Fg%3Fb%3Dsdk%26k%3Du1mbZcoBjax8DUyeic3RW0g%26s%3D140%26t%3D1483327077&dataSign=f323808efe0b6567978312e57f0bc5574ad16b774c59fc1f7aa6068937bee532cd415760f3aac0e0ebd6af070fa0688ee23414cdef810a9650d8d1d099a6069d>
+<https://m.kaola.com/member/activity/txRecord.html?recorId=XXXXX&type=0&accessToken=ee26b0dd4af7e749aa1a&appid=101483052&openid=E3EB42D261FD7F031816BA2728A73F5C&nick=%E9%85%92%E5%89%91%E5%B0%8F%E4%BB%99&pic=https%3A%2F%2Fthirdqq.qlogo.cn%2Fg%3Fb%3Dsdk%26k%3Du1mbZcoBjax8DUyeic3RW0g%26s%3D140%26t%3D1483327077&dataSign=f323808efe0b6567978312e57f0bc5574ad16b774c59fc1f7aa6068937bee532cd415760f3aac0e0ebd6af070fa0688ee23414cdef810a9650d8d1d099a6069d>
 ```
 
