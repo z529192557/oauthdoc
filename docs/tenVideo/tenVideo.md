@@ -65,7 +65,7 @@ openid | 用户openId
 
 ##### 唤起腾讯App的scheme
 ```
-<tenvideo2://action=10&openurl= + encodeURIComponent('https://film.qq.com/h5/vplus/oauth/index.html?channelid=kaola&actType=1')>
+<tenvideo2://action=10&openurl= + encodeURIComponent('https://film.qq.com/h5/vplus/oauth/index.html?channelid=kaola&actType=1&ru=encodeURIComponent(https://m.kaola.com/member/activity/txRecord.html?recorId=XXXXX)')>
 ```
 
 ##### 提供给腾讯的授权回调协议，用于授权成功重新拉起 app
@@ -75,6 +75,7 @@ openid | 用户openId
 ```
 
 ##### 参数说明
+recorId ： 由考拉通过ru传给腾讯一侧
 param中带中文的，先urlencode 该参数
 
 ##### 回调例子
@@ -87,7 +88,7 @@ param中带中文的，先urlencode 该参数
 ##### 唤起腾讯H5的URL
 
 ```
-<https://film.qq.com/h5/vplus/oauth/index.html?channelid=kaola&actType=2&ru=encodeURIComponent(https://m.kaola.com/member/activity/txRecord.html)>
+<https://film.qq.com/h5/vplus/oauth/index.html?channelid=kaola&actType=2&ru=encodeURIComponent(https://m.kaola.com/member/activity/txRecord.html?recorId=XXXXX)>
 ```
 
 ## 考拉H5唤起腾讯H5授权后，回调URL
@@ -95,6 +96,7 @@ param中带中文的，先urlencode 该参数
 <https://m.kaola.com/member/activity/txRecord.html?recorId=XXXXX&parma1=${parma1}&parma2=${parma2}>
 ```
 ##### 参数说明
+recorId ： 由考拉通过ru传给腾讯一侧
 param中带中文的，先urlencode 该参数
 
 ##### 回调例子
