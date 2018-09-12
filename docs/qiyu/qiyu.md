@@ -18,7 +18,7 @@ target | 是 | 考拉H5目标页面
 ```
 * 注意：callback的参数 作为m-user.kaola.com域名的参数，其值需要两次URLencode
 
-##用户确认授权，生成token
+## 用户确认授权，生成token
 
 ```
 <https://m-home.kaola.com/outLogin/getAuthCodeForQiYu.html>
