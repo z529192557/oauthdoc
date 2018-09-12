@@ -4,5 +4,6 @@
   - [网站应用开发指南](/web/web.md)
   - [App应用开发指南](app/app.md)
   - [腾讯视频接入指南](/tenVideo/tenVideo.md)
+  - [奇遇接入指南](/qiyu/qiyu.md)
   - [接口调用说明](api/api.md)
   - [返回码说明](code/code.md)
