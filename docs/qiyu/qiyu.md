@@ -13,7 +13,7 @@ target | 是 | 考拉H5目标页面
 ##### 示例
 
 ```
-<https://global.163.com/urs/redirect?target=https%3a%2f%2fm-user.kaola.com%2foutLogin%2fqiyuAuth.html%3fcallback%3dhttps%253a%252f%252fxxx.xxx.com%252fcallback>
+<https://global.163.com/urs/redirect.html?target=https%3a%2f%2fm-user.kaola.com%2fapp%2fsuper-vip%2faccount-bind%3fcallback%3dhttps%253a%252f%252fwww.kaola.com%252fcallback>
 
 ```
 * 注意：callback的参数 作为m-user.kaola.com域名的参数，其值需要两次URLencode
@@ -70,13 +70,13 @@ msg | 详细错误信息
 
 ##### 接口说明：
 
-此接口用于获取用户个人信息。开发者可通过OpenID来获取用户基本信息。OpenId每一个用户唯一。
+此接口用于获取用户个人信息。
 
 ##### 请求说明：
 
 http请求方式：**POST**
 
-<https://m-home.kaola.com/outLogin/api/getBasicUserInfo.html>
+<https://m-home.kaola.com/outLogin/api/qiyu/getBasicUserInfo.html>
 
 ##### 参数说明
 
@@ -116,3 +116,110 @@ openId | 用户openid
 - | :-
 retCode | 返回码
 retDesc | 详细错误信息
+
+
+
+## 开通会员
+
+##### 接口说明：
+
+此接口用于奇遇开通考拉黑卡会员。
+
+##### 请求说明：
+
+http请求方式：**POST**
+
+<https://m-home.kaola.com/outLogin/api/qiyu/vipOpen.html>
+
+##### 参数说明
+
+以下参数参考奇遇接口文档
+
+参数 | 是否必须 | 说明
+- | :-: | :-
+open_id | 是 | 用户openId
+expire_date | 是 | 失效时间“20190828"
+order_no | 是 | 订单号，长度不超过32
+valid_day | 是 | 会员有效天数
+rights_day | 是 | 权益天数
+secret_id | 是 | 密钥 id(32)，由奇遇分配
+timestamp | 是 | 请求当前 UNIX 时间戳，注意服务器时间同步
+signature | 是 | 请求签名
+
+##### 返回说明
+正确的返回
+```
+{
+	"data": "",
+	"state": {
+		"code": "200",
+		"msg": "接口调用成功"
+	}
+}
+```
+
+
+
+错误的返回
+```
+{
+	"data": "",
+	"state": {
+		"code": "400",
+		"msg": "参数错误"
+	}
+}
+```
+
+
+## 退回会员
+
+
+##### 接口说明：
+
+此接口用于奇遇退回考拉黑卡会员。
+
+##### 请求说明：
+
+http请求方式：**POST**
+
+<https://m-home.kaola.com/outLogin/api/qiyu/vipRefund.html>
+
+##### 参数说明
+
+以下参数参考奇遇接口文档
+
+参数 | 是否必须 | 说明
+- | :-: | :-
+open_id | 是 | 用户openId
+valid_day | 是 | 回收的有效天数
+expire_date | 是 | 原失效时间“20190828"
+order_no_list | 是 | 订单号，英文逗号分隔
+secret_id | 是 | 密钥 id(32)，由奇遇分配
+timestamp | 是 | 请求当前 UNIX 时间戳，注意服务器时间同步
+signature | 是 | 请求签名
+
+##### 返回说明
+正确的返回
+```
+{
+	"data": "",
+	"state": {
+		"code": "200",
+		"msg": "失效会员成功"
+	}
+}
+```
+
+
+
+错误的返回
+```
+{
+	"data": "",
+	"state": {
+		"code": "400",
+		"msg": "参数错误"
+	}
+}
+```
