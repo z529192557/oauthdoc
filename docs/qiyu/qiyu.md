@@ -61,7 +61,7 @@ msg | 详细错误信息
 考拉前端拿到token，根据url中的callback拼接新的url，重定向浏览器
 
 ```
-<https://callback?token=${token}>
+<https://callback?token=${token}&secret_id=${secret_id}&timestamp=${timestamp}&signature=${signature}>
 ```
 
 ## 获取用户信息
