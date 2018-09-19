@@ -82,7 +82,7 @@ http请求方式：**POST**
 
 参数 | 是否必须 | 说明
 - | :-: | :-
-accessToken | 是 | accessToken
+accessToken | 是 | 上一步拿到的token
 appId | 是 | 奇遇AppId，考拉分配
 appSecret | 是 | 奇遇appSecret，考拉分配
 
