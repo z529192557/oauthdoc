@@ -35,13 +35,25 @@ target | 是 | 考拉H5目标页面
 
 正确的返回
 ```
-{"data":"tokene46875849d4ffb1c94d6d1bddb839e1b","retCode":200,"retDesc":"操作成功"}
+{
+	"data": {
+		"secret_id": "qiyu",
+		"signature": "11bae9a93cb2987fc7a5bdbb15a2656a",
+		"timestamp": "1537346294151",
+		"token": "tokenf20eeece5a23b338615704cbc2059f74"
+	},
+	"retCode": 200,
+	"retDesc": "操作成功"
+}
 ```
 参数 | 说明
 - | :-
 retCode | 返回码
 retDesc | 详细信息
-data | token,两小时有效
+secret_id | 奇遇id
+signature | 签名
+timestamp | 时间戳
+token | token
 
 
 错误的返回
