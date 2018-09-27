@@ -139,7 +139,7 @@ retDesc | 详细错误信息
 
 ##### 请求说明：
 
-http请求方式：**POST**
+http请求方式：**POST** content-type:application/json
 
 <https://m-home.kaola.com/outLogin/api/qiyu/vipOpen.html>
 
@@ -157,6 +157,21 @@ rights_day | 是 | 权益天数
 secret_id | 是 | 密钥 id(32)，由奇遇分配
 timestamp | 是 | 请求当前 UNIX 时间戳，注意服务器时间同步
 signature | 是 | 请求签名
+
+参数示例
+```
+{
+	"open_id": "92266349cd94352d026ad2cf8dae5577",
+	"expire_date": "20190828",
+	"order_no": "qiyu111115",
+    "valid_day": 365,
+	"rights_day": 365,
+	"secret_id": "a5ce61cd198643bc98f47be73635d27f",
+	"timestamp": "1537004819000",
+	"signature": "b851a0494c351232bfb9642f5f168012"
+}
+```
+
 
 ##### 返回说明
 正确的返回
@@ -193,7 +208,7 @@ signature | 是 | 请求签名
 
 ##### 请求说明：
 
-http请求方式：**POST**
+http请求方式：**POST** content-type:application/json
 
 <https://m-home.kaola.com/outLogin/api/qiyu/vipRefund.html>
 
@@ -210,6 +225,21 @@ order_no_list | 是 | 订单号，英文逗号分隔
 secret_id | 是 | 密钥 id(32)，由奇遇分配
 timestamp | 是 | 请求当前 UNIX 时间戳，注意服务器时间同步
 signature | 是 | 请求签名
+
+
+参数示例
+```
+{
+	"open_id": "92266349cd94352d026ad2cf8dae5577",
+	"expire_date": "20190828",
+	"order_no_list": "qiyu111115",
+	"valid_day": 365,
+	"secret_id": "a5ce61cd198643bc98f47be73635d27f",
+	"timestamp": "1537004819000",
+	"signature": "6e209fe79e4fdb84aa97b4d61c86f9dd"
+}
+```
+
 
 ##### 返回说明
 正确的返回
