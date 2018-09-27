@@ -139,7 +139,8 @@ retDesc | 详细错误信息
 
 ##### 请求说明：
 
-http请求方式：**POST** content-type:application/json
+http请求方式：**POST**
+content-type: **application/json**
 
 <https://m-home.kaola.com/outLogin/api/qiyu/vipOpen.html>
 
@@ -208,7 +209,8 @@ signature | 是 | 请求签名
 
 ##### 请求说明：
 
-http请求方式：**POST** content-type:application/json
+http请求方式：**POST**
+content-type:**application/json**
 
 <https://m-home.kaola.com/outLogin/api/qiyu/vipRefund.html>
 
