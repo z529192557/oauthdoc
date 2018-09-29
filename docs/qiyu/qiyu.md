@@ -13,7 +13,7 @@ target | 是 | 考拉H5目标页面
 ##### 示例
 
 ```
-<https://global.163.com/urs/redirect.html?target=https%3a%2f%2fm-user.kaola.com%2fapp%2fsuper-vip%2faccount-bind%3fcallback%3dhttps%253a%252f%252fwww.kaola.com%252fcallback>
+<https://global.163.com/urs/redirect.html?target=https%3a%2f%2fm-user.kaola.com%2fapp%2faccount%2fsuper-vip-bind%3fcallback%3dhttps%253a%252f%252fwww.kaola.com%252fcallback>
 
 ```
 * 注意：callback的参数 作为m-user.kaola.com域名的参数，其值需要两次URLencode
