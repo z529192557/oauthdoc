@@ -33,7 +33,7 @@ openid | 用户openId
 
 * 注意：redirect_uri参数要encode
 ```
-<https://m-user.kaola.com/member/activity/oauth.html?appid=${appid}&scope=${scope}&redirect_uri=${redirect_uri参数要encode}>
+<https://m-user.kaola.com/member/activity/oauth.html?appid=${appid}&scope=${scope}&redirect_uri=${redirect_uri}>
 ```
 ##### 参数说明
 
