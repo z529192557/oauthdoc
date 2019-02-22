@@ -33,7 +33,7 @@ openid | 用户openId
 
 * 注意：redirect_uri参数要encode
 ```
-<https://m.kaola.com/member/activity/oauth.html?appid=${appid}&scope=&redirect_uri=>
+<https://m-user.kaola.com/member/activity/oauth.html?appid=${appid}&scope=${scope}&redirect_uri=${redirect_uri参数要encode}>
 ```
 ##### 参数说明
 
@@ -41,7 +41,7 @@ openid | 用户openId
 - | :-: | :-
 appid | 是 | 应用唯一标识，向考拉申请
 scope | 是 | 应用授权范围，写死 **kaola-tenvideo-vip**
-redirect_uri|否|授权后的重定向目标页
+redirect_uri|否|授权后的重定向目标页,需要encode
 
 
 ##### 调用频率限制
