@@ -10,7 +10,10 @@
 
 * [返回码说明](/code/code)
 
-*  [腾讯视频指南](/tenVideo/tenVideo)
+* [腾讯视频指南](/tenVideo/tenVideo)
+
+* [简化授权接入指南](/simple/simple)
+
 
 <!--* [奇遇接入指南](/qiyu/qiyu.md) -->
 联系人：庄鹏
